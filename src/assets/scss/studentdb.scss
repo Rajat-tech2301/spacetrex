@@ -1,0 +1,121 @@
+.studentdbcontainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1%;
+    .studentdbheader{
+        display: flex;
+        justify-content: flex-end;
+        padding: 1%;
+        padding-top: 2%;
+        padding-bottom: 0%;
+        width: 98vw;
+
+        .sdbh-navitems{
+            display: flex;
+            width: 50vw;
+            justify-content: space-around;
+            margin: 0 12% 0 0;
+
+            button{
+                width: 12vw;
+              height:8vh;
+border-radius: 18px;
+border: 2px solid #E8EBEE;
+background: #E8EBEE 0% 0% no-repeat padding-box;
+box-shadow: -9.62px -9.62px 10px #FFFFFF;
+color: #1A273B;
+font-size: 1rem;
+cursor: pointer;
+            }
+        }
+        
+      .sdbh-info{
+         display: flex;
+         align-items: flex-end;
+
+         .sdbh-info-content{
+             display: flex;
+             flex-direction: column;
+             align-items: flex-end;
+             margin-right: 2%;
+             color: #1E1E1E;
+             font-size: 0.9rem;
+             
+         }
+         .sdbh-info-img{
+            width: 40px;
+            height: 30px;
+             img{
+                 max-width: 100%;
+             }
+         }
+        }
+}
+
+.studentdbname{
+    color: #1D0C43;
+    font-size: 1.5rem;
+    padding: 1%;
+    padding-top: 4%;
+    width: 85vw;
+}
+.studentdbdata{
+    backdrop-filter: blur(5px) saturate(150%);
+    background-color: rgba(247, 244, 244, 0.4);
+    border-radius: 25px;
+    border: 0.53px solid  rgba(247, 244, 244, 0.4);
+    padding: 2%;
+    padding-bottom: 1%;
+    padding-top: 0.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .sdbd-header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 15px;
+        padding: 1%;
+        width: 85vw;
+  button{
+      height: 6vh;
+      width: 8vw;
+      font-size: 13px;
+      border-radius: 12px;
+    background: #E8EBEE 0% 0% no-repeat padding-box;
+    box-shadow: -4.5px -4.5px 5px #FFFFFF;
+border: 1px solid #E8EBEE;
+  }
+    }
+    .sdbd-content{
+        height: 59vh;
+        width: 90vw;
+        padding: 2%;
+        backdrop-filter: blur(5px) saturate(150%);        
+        border-radius: 18px;
+        border: 0.53px solid  rgba(122, 121, 121, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow:auto;
+        overflow-x: hidden;
+    }
+}
+}
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border: 0.9747881293296814px solid #404F66;
+      border-radius: 6px;
+      background: #404F66;
+  }
+  ::-webkit-scrollbar-track { 
+    background: transparent linear-gradient(90deg, #E7EBEE4D 59%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    mix-blend-mode: overlay;
+    border: 0.8407000303268433px solid #E3E3E3;
+    border-radius: 12px;
+  }
+

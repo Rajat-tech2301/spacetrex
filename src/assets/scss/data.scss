@@ -1,0 +1,26 @@
+.data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85vw;
+  font-size: 15px;
+  padding: 1%;
+  padding-right: 0%;
+  padding-top: 0.5%;
+  :nth-child(1){
+      margin-left: 0%;
+  }
+ div{
+     margin-left: 5.5%;
+ }
+    button{
+        height: 5vh;
+        width: 9vw;
+        font-size: 13px;
+        border-radius: 12px;
+      background: #E8EBEE 0% 0% no-repeat padding-box;
+      box-shadow: -4.5px -4.5px 5px #FFFFFF;
+  border: 1px solid #E8EBEE;
+  cursor: pointer;
+    }
+}

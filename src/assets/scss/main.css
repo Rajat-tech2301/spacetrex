@@ -1,0 +1,100 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1%;
+}
+
+@media (max-width: 1300px) {
+  .main {
+    height: initial;
+  }
+}
+
+.main .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5%;
+}
+
+@media (max-width: 1300px) {
+  .main .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20vh;
+  }
+}
+
+.main .cards .card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+  .main .cards .card-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.main .main-content {
+  border-right: 12px solid white;
+  color: #F3F5F8;
+  text-shadow: 10px 10px 10px #020202;
+  font-size: 2.8rem;
+  text-align: right;
+  width: 90vw;
+  padding-right: 2%;
+}
+
+@media (max-width: 1300px) {
+  .main .main-content {
+    font-size: 2rem;
+    margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .main .main-content {
+    font-size: 1.5rem;
+    border-right: 6px solid white;
+    padding-right: 4%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Exo2-Medium', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background: url("../images/Bgimg.png") no-repeat center center/cover;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    height: initial;
+  }
+}
+
+.container .logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 140px;
+}
+
+@media (max-width: 600px) {
+  .container .logo {
+    width: 120px;
+    top: 10px;
+    left: 15px;
+  }
+}
+
+.container img {
+  max-width: 100%;
+}
+
+.container .components {
+  z-index: 10;
+}
+/*# sourceMappingURL=app.css.map */
