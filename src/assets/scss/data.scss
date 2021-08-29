@@ -7,6 +7,9 @@
   padding: 1%;
   padding-right: 0%;
   padding-top: 0.5%;
+@media (max-width:950px){
+    display: none;
+}
   :nth-child(1){
       margin-left: 0%;
   }
@@ -23,4 +26,42 @@
   border: 1px solid #E8EBEE;
   cursor: pointer;
     }
+}
+
+///////////////mobile devices css goes here
+
+.mobile-data{
+    width: 260px;
+    height: 260px;
+    backdrop-filter: blur(5px) saturate(150%);
+    background-color: rgba(255, 251, 251, 0.35);
+    border-radius: 18px;
+    border: 0.53px solid  rgba(247, 244, 244, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+    display: none;
+    margin-bottom: 5vh;
+    margin-left: 2vw;
+    @media (max-width:950px){
+        display: block;
+    }
+ div{
+     width: 100%;
+     padding: 2%;
+ }
+ button{
+    height: 5vh;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 12px;
+  background: #E8EBEE 0% 0% no-repeat padding-box;
+  box-shadow: -4.5px -4.5px 5px #FFFFFF;
+border: 1px solid #E8EBEE;
+cursor: pointer;
+margin-top: 10%;
+outline: none;
+ }
 }

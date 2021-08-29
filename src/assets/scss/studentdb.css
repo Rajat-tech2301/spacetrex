@@ -1,4 +1,4 @@
-.studentdbcontainer {
+.studentdb-container {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,79 +11,16 @@
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 1%;
+  overflow: hidden;
 }
 
-.studentdbcontainer .studentdbheader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 1%;
-  padding-top: 2%;
-  padding-bottom: 0%;
-  width: 98vw;
+@media (max-width: 950px) {
+  .studentdb-container {
+    min-height: 100vh;
+  }
 }
 
-.studentdbcontainer .studentdbheader .sdbh-navitems {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50vw;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 0 12% 0 0;
-}
-
-.studentdbcontainer .studentdbheader .sdbh-navitems button {
-  width: 12vw;
-  height: 8vh;
-  border-radius: 18px;
-  border: 2px solid #E8EBEE;
-  background: #E8EBEE 0% 0% no-repeat padding-box;
-  -webkit-box-shadow: -9.62px -9.62px 10px #FFFFFF;
-          box-shadow: -9.62px -9.62px 10px #FFFFFF;
-  color: #1A273B;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.studentdbcontainer .studentdbheader .sdbh-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.studentdbcontainer .studentdbheader .sdbh-info .sdbh-info-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-right: 2%;
-  color: #1E1E1E;
-  font-size: 0.9rem;
-}
-
-.studentdbcontainer .studentdbheader .sdbh-info .sdbh-info-img {
-  width: 40px;
-  height: 30px;
-}
-
-.studentdbcontainer .studentdbheader .sdbh-info .sdbh-info-img img {
-  max-width: 100%;
-}
-
-.studentdbcontainer .studentdbname {
+.studentdb-container .studentdb-name {
   color: #1D0C43;
   font-size: 1.5rem;
   padding: 1%;
@@ -91,7 +28,14 @@
   width: 85vw;
 }
 
-.studentdbcontainer .studentdbdata {
+@media (max-width: 950px) {
+  .studentdb-container .studentdb-name {
+    margin-top: 5vh;
+    font-size: 1.4rem;
+  }
+}
+
+.studentdb-container .studentdb-data {
   -webkit-backdrop-filter: blur(5px) saturate(150%);
           backdrop-filter: blur(5px) saturate(150%);
   background-color: rgba(247, 244, 244, 0.4);
@@ -112,7 +56,13 @@
           align-items: center;
 }
 
-.studentdbcontainer .studentdbdata .sdbd-header {
+@media (max-width: 950px) {
+  .studentdb-container .studentdb-data {
+    display: none;
+  }
+}
+
+.studentdb-container .studentdb-data .sdb-d-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,7 +76,7 @@
   width: 85vw;
 }
 
-.studentdbcontainer .studentdbdata .sdbd-header button {
+.studentdb-container .studentdb-data .sdb-d-header button {
   height: 6vh;
   width: 8vw;
   font-size: 13px;
@@ -137,7 +87,7 @@
   border: 1px solid #E8EBEE;
 }
 
-.studentdbcontainer .studentdbdata .sdbd-content {
+.studentdb-container .studentdb-data .sdb-d-content {
   height: 59vh;
   width: 90vw;
   padding: 2%;
@@ -157,6 +107,32 @@
           align-items: center;
   overflow: auto;
   overflow-x: hidden;
+}
+
+.studentdb-container .studentdb-data-mobile {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  visibility: hidden;
+  overflow: auto;
+  margin-top: 2vh;
+}
+
+@media (max-width: 950px) {
+  .studentdb-container .studentdb-data-mobile {
+    visibility: visible;
+  }
 }
 
 ::-webkit-scrollbar {

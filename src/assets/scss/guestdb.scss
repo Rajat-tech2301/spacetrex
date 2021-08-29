@@ -1,0 +1,140 @@
+.guestdb-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   padding-bottom: 1%;
+   overflow: hidden;
+   @media (max-width:1080px){
+       height: initial;
+   }
+    .guestdb-main{
+        backdrop-filter: blur(5px) saturate(150%);
+        background-color: rgba(247, 244, 244, 0.4);
+        border-radius: 18px;
+        border: 0.53px solid  rgba(247, 244, 244, 0.4);
+        width: 1058px;
+        height: 353px;
+        display: flex;
+        padding:18px;
+    @media (max-width:1080px){
+        flex-direction: column;
+        align-items: center;
+        height: initial;
+        width: 574+36px;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+        order: 3;
+    }
+    @media (max-width:680px){
+         width: 246+36px;
+    }
+        .guestdb-main-video{
+             background-color: white;
+        // 1.25 times of original 
+             width: 50%;
+             border: none;
+             margin-right: 5%;
+        @media (max-width:1080px){
+            width: 100%;            
+          // 0.7 times of original
+            height: 355px;
+            margin-right: 0%;
+        }
+        @media (max-width:680px){
+            // 0.3 times of original
+            height: 152px;
+        }
+        }
+        #guestdb-playbutton{
+            position: absolute;
+           left: 228px;
+           top:140px;
+            background-color: #ECA979;
+            border-radius: 120px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 100;
+        @media (max-width:1080px){
+            left: 305-36px;
+            top: 195-36px;
+        }
+        @media (max-width:680px){
+            left: 141-25px;
+            top:94-18px;
+            width: 40px;
+            height: 40px;
+        }
+        div{
+          border-color: transparent transparent transparent white; 
+            border-style: solid;
+            width: 0;
+            height: 0;
+            margin-left: 1vw;
+            border-width: 1.2em 0 1.2em 2.4em;
+        @media (max-width:680px){
+            border-width: 0.8em 0 0.8em 1.4em;   
+        }
+        }
+        }
+
+        .guestdb-main-videotext{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+            font-size: 18px;
+        @media (max-width:1080px){
+            width: 90%;
+            margin-top: 2%;
+        }
+    @media(max-width:680px){
+         font-size: 15px;
+    }
+     
+       li{
+           margin-top: 2%;
+           @media (max-width:680px){
+               margin-top: 5%;
+           }
+       }
+            &::after{
+                content: '*New Generation Science Standards';
+                font-size: 13px;
+                margin-top: 5%;
+                @media (max-width:680px){
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .guestdb-footertext{
+         width: 1058px;
+         border-left: 12px solid #F3F5F8;
+         color: #F3F5F8;
+ text-shadow: 10px 10px 10px #020202;
+ font-size: 30px;
+ padding-left: 1%;
+
+ @media (max-width:1080px){
+    width: 574+36px;
+    order: 2;
+    margin-top: 15vh;
+ }
+ @media (max-width:680px){
+    width: 246+36px;
+    font-size: 20px;
+    text-shadow: 5px 5px 10px #020202;
+    border-left: 6px solid #F3F5F8;
+}
+    :nth-child(1){
+        margin-bottom: 2%;
+    }
+    }
+}

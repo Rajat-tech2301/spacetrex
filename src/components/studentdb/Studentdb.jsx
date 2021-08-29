@@ -1,8 +1,8 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import bellimg from '../../assets/images/bell.png'; 
 import Data from './Data';
+import Header from './Header';
 import '../../assets/scss/data.css';
+import '../../assets/scss/header.css';
 
 let data=
 {
@@ -14,28 +14,20 @@ let data=
     pressure:'120 psi',
     nozzeldiameter:'12mm'
 }
-export default function studentdb() {
+let headerdata={
+    btn1:'Home',
+    btn2:'Resources',
+    btn3:'DataAnalysis',
+    name:'Micheal John',
+    email:'micheal.john@gmail.com'
+}
+export default function Studentdb() {
     return (
-        <div className="studentdbcontainer">
-             <div className="studentdbheader">
-                 <div className="sdbh-navitems">
-                    <Link to='#' > <button >Home</button> </Link>
-                    <Link to='#'> <button >Resources</button> </Link>
-                    <Link to='#'> <button >DataAnalysis</button> </Link>
-                 </div>
-                 <div className="sdbh-info">
-                     <div className="sdbh-info-content">
-                         <div>Micheal John</div>
-                         <div>micheal.john@gmail.com</div>
-                     </div>
-                     <div className="sdbh-info-img">
-                         <img src={bellimg} alt="bell" />
-                     </div>
-                 </div>
-             </div>
-             <div className="studentdbname">Welcome Micheal John</div>
-             <div className="studentdbdata">
-                 <div className="sdbd-header">
+        <div className="studentdb-container">
+            <Header {...headerdata}/>
+             <div className="studentdb-name">Welcome Micheal John</div>           
+            <div className="studentdb-data">
+                 <div className="sdb-d-header">
                      <div>Sr. No.</div>
                      <button>Student <br/> Name</button>
                      <button>Date</button>
@@ -45,13 +37,23 @@ export default function studentdb() {
                      <button>Nozzle<br/> Diameter</button>
                      <div>Action</div>
                  </div>
-              <div className="sdbd-content">
+              <div className="sdb-d-content">
                   <Data {...data}/>
                   <Data {...data}/>
                   <Data {...data}/>
                   <Data {...data}/>
               </div>
              </div>
+            <div className="studentdb-data-mobile">
+              <Data {...data}/>
+              <Data {...data}/>
+              <Data {...data}/>
+              <Data {...data}/>
+              <Data {...data}/>
+              <Data {...data}/>
+              <Data {...data}/>
+              <Data {...data}/>
+            </div>    
         </div>
     )
 }

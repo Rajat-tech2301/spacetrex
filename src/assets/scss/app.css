@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Exo2-Medium', sans-serif;
+  font-family: 'Exo2-bold', sans-serif;
 }
 
 .container {
@@ -23,14 +23,14 @@ body {
 
 .container .logo {
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 30px;
-  width: 140px;
+  width: 120px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1080px) {
   .container .logo {
-    width: 120px;
+    width: 100px;
     top: 10px;
     left: 15px;
   }
