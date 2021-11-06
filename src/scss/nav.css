@@ -1,0 +1,188 @@
+.main {
+  overflow: hidden;
+  border: 2px solid blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+  height: 100vh;
+}
+
+#nav {
+  border: 2px solid red;
+  width: 95vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Exo 2', sans-serif;
+}
+
+#nav .nav-tab {
+  width: 214px;
+  height: 57px;
+  background: #EDEDED59 0% 0% no-repeat;
+  -webkit-box-shadow: 0px 0px 4px #94949452;
+          box-shadow: 0px 0px 4px #94949452;
+  border-radius: 22px;
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1A273B;
+  text-decoration: none;
+}
+
+#nav .active {
+  background-color: white;
+}
+
+#nav .nav-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media (max-width: 1080px) {
+  #nav .nav-content {
+    display: none;
+  }
+}
+
+#nav .nav-content .nav-content_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 2%;
+  color: #1E1E1E;
+  font-size: 0.9rem;
+}
+
+#nav .nav-content .nav-content_info div {
+  font-family: 'Exo 2', sans-serif;
+}
+
+#nav .nav-content .nav-content_img {
+  width: 40px;
+  height: 30px;
+}
+
+#nav .nav-content .nav-content_img img {
+  max-width: 100%;
+}
+
+#nav #account-setting {
+  position: absolute;
+  font-family: 'Exo 2', sans-serif;
+  top: 110px;
+  z-index: 100;
+  width: 208px;
+  height: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 14px;
+}
+
+#nav #account-setting div {
+  cursor: pointer;
+}
+
+#nav #change-password {
+  position: absolute;
+  top: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 101;
+  left: 62%;
+  width: 290px;
+  height: 202px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 14px;
+}
+
+#nav #change-password div {
+  color: #7A7A7A;
+}
+
+#nav #change-password button {
+  width: 150px;
+  height: 35px;
+  background: #EDAA79 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 0px 25px #02020252;
+          box-shadow: 0px 0px 25px #02020252;
+  border-radius: 34px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: #1A273B;
+  font-family: 'Exo 2', sans-serif;
+}
+
+#nav #change-password input {
+  width: 238px;
+  height: 35px;
+  text-align: center;
+  outline: none;
+  background: #D9DCE2 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 25px;
+}
+/*# sourceMappingURL=nav.css.map */

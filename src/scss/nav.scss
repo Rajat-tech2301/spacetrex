@@ -1,0 +1,129 @@
+.main{
+    overflow: hidden;
+    border:2px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    height: 100vh;
+    
+   
+      
+    
+}
+
+
+#nav{
+    border:2px solid red;
+    width: 95vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Exo 2', sans-serif;
+    
+    .nav-tab{
+        width: 214px;
+       height: 57px;
+       background: #EDEDED59 0% 0% no-repeat;
+       box-shadow: 0px 0px 4px #94949452;
+       border-radius: 22px;
+       margin-right: 30px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: #1A273B;
+       text-decoration: none;
+  
+    }
+    .active{
+        background-color: white;
+    }
+    .nav-content{
+        display: flex;
+        align-items: flex-end;
+        cursor: pointer;
+        user-select: none;
+        @media (max-width:1080px){
+            display: none;
+        }
+   
+        .nav-content_info{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-right: 2%;
+            color: #1E1E1E;
+            font-size: 0.9rem;
+          div{
+
+              font-family: 'Exo 2', sans-serif;
+          }  
+            
+        }
+        .nav-content_img{
+           width: 40px;
+           height: 30px;
+            img{
+                max-width: 100%;
+            }
+        }
+       }
+       #account-setting{
+        position: absolute;
+        font-family: 'Exo 2', sans-serif;
+        top: 110px;
+        z-index: 100;   
+        width: 208px;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+border-radius: 14px;
+   div{
+       cursor: pointer;
+   }
+       }
+       #change-password{
+        position: absolute;   
+        top: 125px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 101;
+        left: 62%;
+        width: 290px;
+        height: 202px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+border-radius: 14px;
+           div{
+               color: #7A7A7A;
+           }
+              button{
+                width: 150px;
+                height: 35px;
+                background: #EDAA79 0% 0% no-repeat padding-box;
+                box-shadow: 0px 0px 25px #02020252;
+                border-radius: 34px;
+                border: none;
+                cursor: pointer;
+                font-size: 15px;
+                color: #1A273B;
+                font-family: 'Exo 2', sans-serif;
+              }
+              input{
+                width: 238px;
+                height: 35px;
+                text-align: center;
+                outline: none;
+                background: #D9DCE2 0% 0% no-repeat padding-box;
+                
+                border: none;
+                border-radius: 25px;
+              }
+       }
+}
