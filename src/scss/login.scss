@@ -4,10 +4,11 @@
     justify-content:flex-end;
     align-items:center;
     font-family: 'Exo 2', sans-serif;
+    // border:2px solid red;
     
 @media (max-width:940px){
     flex-direction: column;
-    height: initial;
+    height: 100vh;
     justify-content: center;
 }
 
@@ -17,14 +18,17 @@
         color: #F4F6F9;
         font-size: 2.5rem;
         margin: 30% 0 0 0;
+        // border:2px solid red;
         
         padding-right: 20px;
         border-right: 4px solid #F4F6F9;
         text-align: right;
     @media (max-width:940px){
-        margin-top: 20vh;
+        margin-top: 10vh;
+        margin-bottom: 20px;
         padding-right: 2%;
-        padding-bottom: 5%;
+        padding-bottom: 2%;
+        margin-right: 20px;
         text-align: right;
         font-size: 2rem;
         width: 100vw;
@@ -51,13 +55,15 @@
         padding-left: 35px;
         padding-top: 2%;
         margin: 10% 10% 0 8% ;
+        // border:2px solid red;
     @media (max-width:940px){
         margin: 3% 0% 0 0% ;
-        margin-bottom: 10vh;
+        margin-bottom: 5vh;
     }
     @media (max-width:600px){
         width: 300px;
         height: 400px;
+        padding: 25px;
     }
 
  h1{
@@ -96,7 +102,7 @@
            font-family: 'Exo 2', sans-serif;
 
          @media (max-width:600px)  {
-            background: transparent linear-gradient(180deg, #E7EBEE00 10%, #FFFFFF 100%) 0% 0% no-repeat padding-box; 
+            background: transparent linear-gradient(180deg, #E7EBEE00 10%, #f7f7f7 100%) 0% 0% no-repeat padding-box; 
             width: 250px;
             height: 45px;
             font-size: 15px;

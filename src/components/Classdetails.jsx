@@ -29,7 +29,7 @@ export default function Classdetails() {
               </div>
              <div className="class-info">
                  <span>1</span>
-                 <span>Student 1</span>
+                 <span>Student</span>
                  <span onClick={editstudent}>Edit</span>
                  <span>Delete</span>
              </div>

@@ -9,20 +9,20 @@ export default function Devices() {
              <div>All Devices</div>
              <div>View all assigned devices here</div>
              <div className='device_dashboard'>
-                <table>
+                <table >
                     <tr className='device_dashboard_header'>
-                        <th>Sr. No.</th>
-                        <th>
+                        <th align="center">Sr. No.</th>
+                        <th align="center">
                           <div>
                           Device Name    
                               </div>  
                             </th>
-                        <th>
+                        <th align="center">
                             <div>   
                             Last launch
                             </div>
                           </th>
-                        <th>No. Of Experiments</th>
+                        <th align="center">No. Of Experiments</th>
                     </tr>
                     <tr>
                         <td>1</td>

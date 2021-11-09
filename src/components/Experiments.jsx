@@ -1,6 +1,7 @@
 import React from 'react'
 import '../scss/experiment.css'
 
+
 export default function Experiments() {
     return (
         <div id="experiment">
@@ -65,11 +66,14 @@ export default function Experiments() {
                         <td>700ml</td>
                         <td>8mm</td>
                         <td>700ml</td>
-                        <td>
+                        <td >
+                        <button className='analyse-btn'>
                           Analyse
+                        </button>   
 
                         </td>
                     </tr>
+                    
                    
                 </table>
              </div>

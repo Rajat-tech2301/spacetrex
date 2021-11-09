@@ -1,21 +1,40 @@
 #experiment{
     font-family: 'Exo 2', sans-serif;
+    margin-top: 20px;
+    // border:2px solid red;
+    width: 95vw;
     :nth-child(1){
         // border:2px solid blue;
         font-size: 16px;
         color: #2D2D2D;
+        padding-left: 40px;
+        @media (max-width:500px){
+            padding-left: 20px;
+        }
     }
     :nth-child(2){
         color: #1D0C43;
         font-size: 35px;
+        padding-left: 40px;
+        margin-bottom: 15px;
+        @media (max-width:500px){
+            padding-left: 20px;
+            font-size: 28px;
+        }
     }
     :nth-child(3){
         color: #1D0C43;
         font-size: 24px;
+        padding-left: 40px;
+        margin-bottom: 10px;
+        @media (max-width:500px){
+            padding-left: 20px;
+            
+        }
     }
     .experiment_dashboard{
         height: 400px;
-        border:2px solid pink;
+        // border:2px solid pink;
         background: #fafafa59 0% 0% no-repeat;
        box-shadow: 0px 0px 24px #00000052;
     border-radius: 18px;
@@ -23,32 +42,78 @@
     flex-direction: column;
     padding: 20px;
     overflow: auto;
+    margin: 0px;
+    @media (max-width:1050px){
+        height: 600px;
+        margin-bottom: 20px;
+    }
     table{
+        margin: 0px;
+        padding: 0px;
+        // border:2px solid red;
+        @media (max-width:1050px){
+            width: 100vw;
+        }
         :nth-child(1),:nth-child(2),:nth-child(3){
             font-size: unset;
             color: unset;
+            margin: 0px;
+            // padding: 0px;
         }
         // td,th,tr{
         //     border:2px solid black;
         // }
+      
         .experiment_dashboard_header{
-        
+            font-size: 15px;
+          th{
+              padding: 10px;
+
+          }
             th div{
-              width: 130px;
-              height: 40px;
-             // margin-left: 100px;
+             min-width: 100px;
+             min-height: 40px;
               display: flex;
               align-items: center;
               justify-content: center;
               background: #f8f8f8 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 18px #02020252;
-  border-radius: 17px;
+  border-radius: 10px;
+  padding: 0px;
+
   
             }
         }
-        td{
-            text-align: center;
-            padding-top: 20px;
+        tr{
+           
+            td{
+                text-align: center;
+                
+                padding-top: 20px;
+                padding-left: 10px;
+                margin: 0px;
+                
+                
+                
+                
+            }
+            .analyse-btn{
+                color: #1A273B;
+                font-family: 'Exo 2', sans-serif;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 5px #02020252;
+border-radius: 13px;
+min-width: 91px;
+min-height: 35px;
+cursor: pointer;
+border: none;
+
+
+text-decoration: none;
+padding: 0px;
+margin: 0px;
+
+            }
         }
     
 

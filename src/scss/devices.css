@@ -3,31 +3,70 @@
   display: -ms-flexbox;
   display: flex;
   font-family: 'Exo 2', sans-serif;
+  margin-top: 20px;
+}
+
+@media (max-width: 1050px) {
+  #devices {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 #devices .devices_section-1 {
-  border: 2px solid red;
-  width: 80vw;
+  width: 70vw;
+}
+
+@media (max-width: 1050px) {
+  #devices .devices_section-1 {
+    width: 95vw;
+  }
 }
 
 #devices .devices_section-1 :nth-child(1) {
   font-size: 16px;
   color: #2D2D2D;
+  padding-left: 40px;
+}
+
+@media (max-width: 500px) {
+  #devices .devices_section-1 :nth-child(1) {
+    padding-left: 10px;
+  }
 }
 
 #devices .devices_section-1 :nth-child(2) {
   color: #1D0C43;
   font-size: 35px;
+  padding-left: 40px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 500px) {
+  #devices .devices_section-1 :nth-child(2) {
+    padding-left: 10px;
+    font-size: 25px;
+  }
 }
 
 #devices .devices_section-1 :nth-child(3) {
   color: #1D0C43;
   font-size: 24px;
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+  #devices .devices_section-1 :nth-child(3) {
+    padding-left: 10px;
+    font-size: 28px;
+  }
 }
 
 #devices .devices_section-1 .device_dashboard {
   height: 400px;
-  border: 2px solid pink;
   background: #fafafa59 0% 0% no-repeat;
   -webkit-box-shadow: 0px 0px 24px #00000052;
           box-shadow: 0px 0px 24px #00000052;
@@ -43,15 +82,39 @@
   overflow: auto;
 }
 
+@media (max-width: 1050px) {
+  #devices .devices_section-1 .device_dashboard {
+    padding: 20px;
+    padding-top: 40px;
+    height: 500px;
+  }
+}
+
+#devices .devices_section-1 .device_dashboard table {
+  padding: 0px;
+  margin: 0px;
+}
+
+@media (max-width: 1050px) {
+  #devices .devices_section-1 .device_dashboard table {
+    width: 100vw;
+  }
+}
+
 #devices .devices_section-1 .device_dashboard table :nth-child(1), #devices .devices_section-1 .device_dashboard table :nth-child(2), #devices .devices_section-1 .device_dashboard table :nth-child(3) {
   font-size: unset;
   color: unset;
+  padding: 0px;
+  margin: 0px;
+}
+
+#devices .devices_section-1 .device_dashboard table .device_dashboard_header th {
+  padding: 10px;
 }
 
 #devices .devices_section-1 .device_dashboard table .device_dashboard_header th div {
   width: 170px;
-  height: 50px;
-  margin-left: 100px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,7 +127,13 @@
   background: #f8f8f8 0% 0% no-repeat padding-box;
   -webkit-box-shadow: 0px 0px 18px #02020252;
           box-shadow: 0px 0px 18px #02020252;
-  border-radius: 17px;
+  border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+  #devices .devices_section-1 .device_dashboard table .device_dashboard_header th div {
+    width: 120px;
+  }
 }
 
 #devices .devices_section-1 .device_dashboard table td {
@@ -73,16 +142,25 @@
 }
 
 #devices .devices_section-2 {
-  border: 2px solid black;
+  padding: 30px;
+  padding-top: 80px;
+}
+
+@media (max-width: 1050px) {
+  #devices .devices_section-2 {
+    padding: 20px;
+    padding-top: 40px;
+  }
 }
 
 #devices .devices_section-2 .devices_seciton-2_heading {
   font-size: 22px;
+  margin-bottom: 10px;
 }
 
 #devices .devices_section-2 .summary-dashboard {
   width: 260px;
-  height: 230px;
+  height: 210px;
   background: #fafafa59 0% 0% no-repeat;
   -webkit-box-shadow: 0px 0px 24px #00000052;
           box-shadow: 0px 0px 24px #00000052;

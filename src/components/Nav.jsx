@@ -24,6 +24,7 @@ export default function Nav() {
    }
 
     return (
+        <>
        <div id="nav">    
           <Link to='/dashboard' onClick={()=>{active(0)}} className="nav-tab active">
               <div></div>
@@ -68,5 +69,33 @@ export default function Nav() {
          </form>  
         }    
        </div>
+       {/* For Mobile devices */}
+       <nav role="navigation" className='header-mobile'>
+                   <div id="menuToggle">
+                   <input type="checkbox" />
+                   <span></span>
+                   <span></span>
+                   <span></span>
+                   <ul id="menu">
+                     <Link to="/dashboard"><li>Dashboard</li></Link>
+                     <Link to="/class"><li>Class</li></Link>
+                     <Link to="/devices"><li>Devices</li></Link>
+                     <Link to="/experiments"><li>Experiments</li></Link>
+                     <div className="mobile-header-content">
+                     <div className="mobile-header-content-img">
+                         <img src={bellimg} alt="bell" />
+                     </div>
+                     <div className="mobile-header-content-info">
+                         <div>
+                         Test Teacher
+                         
+                         </div>
+                         <div>test.teacher@gmail.com</div>
+                     </div>
+                    </div>
+                   </ul>
+                 </div>
+               </nav>
+       </>
     )
 }

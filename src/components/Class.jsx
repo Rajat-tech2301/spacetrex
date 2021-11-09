@@ -25,7 +25,7 @@ export default function Class() {
               </div>
              <div className="class-info">
                  <span>1</span>
-                 <Link to='/classdetails'><span>Test_Class 1</span></Link>
+                 <Link to='/classdetails'><span>Test_Class</span></Link>
                  <span onClick={updateclass}>Edit</span>
                  <span>Delete</span>
              </div>

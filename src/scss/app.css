@@ -8,11 +8,11 @@
 
 body {
   font-family: 'Exo2-bold', sans-serif;
-  overflow: hidden;
 }
 
 .container {
   height: 100vh;
+  overflow: hidden;
   background: url("../images/Bgimg.png") no-repeat center center/cover;
 }
 
