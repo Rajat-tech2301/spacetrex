@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/spacetrek/static/css/main.835ce37b.chunk.css",
-    "main.js": "/spacetrek/static/js/main.52be6c0b.chunk.js",
-    "main.js.map": "/spacetrek/static/js/main.52be6c0b.chunk.js.map",
+    "main.js": "/spacetrek/static/js/main.cc13953f.chunk.js",
+    "main.js.map": "/spacetrek/static/js/main.cc13953f.chunk.js.map",
     "runtime-main.js": "/spacetrek/static/js/runtime-main.f6ee153e.js",
     "runtime-main.js.map": "/spacetrek/static/js/runtime-main.f6ee153e.js.map",
     "static/js/2.709e5096.chunk.js": "/spacetrek/static/js/2.709e5096.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.f6ee153e.js",
     "static/js/2.709e5096.chunk.js",
     "static/css/main.835ce37b.chunk.css",
-    "static/js/main.52be6c0b.chunk.js"
+    "static/js/main.cc13953f.chunk.js"
   ]
 }
