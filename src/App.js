@@ -16,7 +16,7 @@ function App() {
         <div className="components">
        <Switch>
           <Route exact path='/login' component={Login}/>
-          <Route  path='/' component={Main}/>
+          <Route  path='/spacetrek' component={Main}/>
         </Switch>       
         </div>
         </div>

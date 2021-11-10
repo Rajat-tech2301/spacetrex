@@ -26,7 +26,7 @@ export default function Nav() {
     return (
         <>
        <div id="nav">    
-          <Link to='/' onClick={()=>{active(0)}} className="nav-tab active">
+          <Link to='/spacetrek' onClick={()=>{active(0)}} className="nav-tab active">
               <div></div>
               <div>Dashboard</div>
           </Link>
