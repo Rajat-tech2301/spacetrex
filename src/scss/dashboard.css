@@ -9,6 +9,7 @@
           flex-direction: column;
   font-family: 'Exo 2', sans-serif;
   margin-top: 20px;
+  margin-bottom: 55px;
 }
 
 #dashboard :nth-child(1) {

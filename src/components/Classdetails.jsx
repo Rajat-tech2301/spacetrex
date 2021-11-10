@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import '../scss/class.css'
+import {Link} from 'react-router-dom'
 
 export default function Classdetails() {
     const [createclass, setCreateclass] = useState('');
@@ -22,7 +23,28 @@ export default function Classdetails() {
           <div className='class_section-1_h2'>Test_Class 1</div>
           <div className='class_section-1_h3'>Manage Test_class 1 details here</div>
           <div className='class_dashboard'>
-              <div className='class-heading'>
+          <table >
+            <tr className='class_dashboard_header'>
+                        <th align="center">Sr. No.</th>
+                        <th align="center">
+                            
+                            Student ID
+                            
+                          </th>
+                        <th align="center">Manage Student list</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><Link to='/classdetails'>Student</Link></td>
+                        <td>
+                        <span onClick={editstudent}>Edit</span>
+                        <span>Delete</span>
+                        </td>
+                    </tr>
+                   
+                </table>
+
+              {/* <div className='class-heading'>
                   <span>Sr.No.</span>
                   <span>Student ID</span>
                   <span>Manage student list</span>
@@ -32,7 +54,7 @@ export default function Classdetails() {
                  <span>Student</span>
                  <span onClick={editstudent}>Edit</span>
                  <span>Delete</span>
-             </div>
+             </div> */}
            
 { updatestudent&&
         <form className="edit_modal">

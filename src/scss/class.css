@@ -71,6 +71,7 @@
   -webkit-box-shadow: 0px 0px 24px #00000052;
           box-shadow: 0px 0px 24px #00000052;
   border-radius: 18px;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,74 +91,26 @@
   }
 }
 
-#class .class_section-1 .class_dashboard .class-heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0px 0px 20px 0px;
-  width: 100%;
-  text-align: center;
-}
-
-#class .class_section-1 .class_dashboard .class-heading :nth-child(2) {
-  margin-left: 15%;
-}
-
-#class .class_section-1 .class_dashboard .class-heading :nth-child(3) {
-  margin-left: 55%;
-}
-
-#class .class_section-1 .class_dashboard .class-heading span {
-  border: unset;
-  font-size: 18px;
-  color: #000000;
-}
-
-#class .class_section-1 .class_dashboard .class-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-bottom: 1px solid #707070;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  padding: 10px;
-}
-
 @media (max-width: 1050px) {
-  #class .class_section-1 .class_dashboard .class-info {
-    border: none;
+  #class .class_section-1 .class_dashboard table {
+    width: 100vw;
   }
 }
 
-#class .class_section-1 .class_dashboard .class-info span {
-  border: unset;
-  font-size: 21px;
-  color: #1A273B;
+#class .class_section-1 .class_dashboard table td {
+  text-align: center;
+  padding-top: 20px;
 }
 
-#class .class_section-1 .class_dashboard .class-info :nth-child(2) {
-  color: #7F2490 !important;
-  margin-left: 18.5%;
-  cursor: pointer;
+#class .class_section-1 .class_dashboard table td a {
   text-decoration: none;
-}
-
-#class .class_section-1 .class_dashboard .class-info :nth-child(3) {
-  margin-left: 35%;
-  cursor: pointer;
-}
-
-#class .class_section-1 .class_dashboard .class-info :nth-child(4) {
-  margin-left: 20%;
-  cursor: pointer;
+  color: #7F2490;
 }
 
 #class .class_section-2 {
   padding: 20px;
   padding-right: 0px;
-  padding-top: 80px;
+  padding-top: 120px;
 }
 
 #class .class_section-2 .add {

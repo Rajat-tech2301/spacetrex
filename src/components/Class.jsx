@@ -18,7 +18,29 @@ export default function Class() {
           <div className='class_section-1_h2'>Class List</div>
           <div className='class_section-1_h3'>Manage classes here</div>
           <div className='class_dashboard'>
-              <div className='class-heading'>
+            
+          <table >
+            <tr className='class_dashboard_header'>
+                        <th align="center">Sr. No.</th>
+                        <th align="center">
+                            
+                            Class
+                            
+                          </th>
+                        <th align="center">Manage</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><Link to='/classdetails'>Test_Class</Link></td>
+                        <td>
+                        <span onClick={updateclass}>Edit</span>
+                        <span>Delete</span>
+                        </td>
+                    </tr>
+                   
+                </table>
+
+               {/* <div className='class-heading'>
                   <span>Sr.No.</span>
                   <span>Class</span>
                   <span>Manage</span>
@@ -29,6 +51,7 @@ export default function Class() {
                  <span onClick={updateclass}>Edit</span>
                  <span>Delete</span>
              </div>
+               */}
            
 { editclass&&
         <form className="edit_modal">
@@ -37,7 +60,10 @@ export default function Class() {
       <button type='submit'>Update</button>
         </form>
     }        
-          </div>
+          
+          </div>    
+
+    
     </div> 
     <div className="class_section-2">
         <div className='add' onClick={addclass}>

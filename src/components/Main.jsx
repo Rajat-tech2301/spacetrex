@@ -15,7 +15,7 @@ export const Main = () => {
        <div className="main">
         <Nav/>
         <Switch>
-          <Route exact path='/dashboard' component={Dashboard}/>
+          <Route exact path='/' component={Dashboard}/>
           <Route exact path='/class' component={Class}/>
           <Route exact path='/devices' component={Devices}/>
           <Route exact path='/experiments' component={Experiments}/>
