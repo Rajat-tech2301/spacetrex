@@ -30,15 +30,15 @@ export default function Nav() {
               <div></div>
               <div>Dashboard</div>
           </Link>
-          <Link to='/class' onClick={()=>{active(1)}} className="nav-tab">
+          <Link to='/spacetrek/class' onClick={()=>{active(1)}} className="nav-tab">
               <div></div>
               <div>Class</div>
           </Link>
-          <Link to='/devices'onClick={()=>{active(2)}} className="nav-tab">
+          <Link to='/spacetrek/devices'onClick={()=>{active(2)}} className="nav-tab">
               <div></div>
               <div>Devices</div>
           </Link>
-          <Link to='/experiments' onClick={()=>{active(3)}} className="nav-tab">
+          <Link to='/spacetrek/experiments' onClick={()=>{active(3)}} className="nav-tab">
               <div></div>
               <div>Experiments</div>
           </Link>

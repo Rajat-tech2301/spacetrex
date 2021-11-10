@@ -16,10 +16,10 @@ export const Main = () => {
         <Nav/>
         <Switch>
           <Route exact path='/spacetrek' component={Dashboard}/>
-          <Route exact path='/class' component={Class}/>
-          <Route exact path='/devices' component={Devices}/>
-          <Route exact path='/experiments' component={Experiments}/>
-          <Route exact path='/classdetails' component={Classdetails}/>
+          <Route exact path='/spacetrek/class' component={Class}/>
+          <Route exact path='/spacetrek/devices' component={Devices}/>
+          <Route exact path='/spacetrek/experiments' component={Experiments}/>
+          <Route exact path='/spacetrek/classdetails' component={Classdetails}/>
         </Switch>      
         {/* <Class/> */}
         {/* <Devices/> */}
